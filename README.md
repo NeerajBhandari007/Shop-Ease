@@ -1,7 +1,3 @@
-Creating a README file for your GitHub repository is an important step in providing information about your project to potential users and contributors. Below is a template you can use as a starting point for your ShopEase project's README:
-
----
-
 # ShopEase - Full-Stack MERN E-commerce Application
 
 ShopEase is a full-stack e-commerce web application built using the MERN stack (MongoDB, Express, React, Node.js). It provides a comprehensive platform for online shopping with features like user authentication and Stripe payment integration. ShopEase allows efficient order management and offers a personalized shopping experience.
@@ -64,9 +60,6 @@ ShopEase is a full-stack e-commerce web application built using the MERN stack (
 
 Contributions are welcome! Feel free to open issues and pull requests.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
