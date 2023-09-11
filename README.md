@@ -52,7 +52,7 @@ ShopEase is a full-stack e-commerce web application built using the MERN stack (
 
 ## Usage
 
-- Visit the live demo at [ShopEase Demo](shop-ease-five.vercel.app).
+- Visit the live demo at [ShopEase Demo](https://shop-ease-five.vercel.app/).
 
 - Create an account, explore the product catalog, add items to your cart, and complete a purchase.
 
