@@ -5,6 +5,7 @@ const userSchema = new Schema({
   email: { type: String, required: true, unique: true },
   password: { type: Buffer, required: true },
   role: { type: String, required: true, default:'user' },
+  // mixed for json [] for array
   addresses: { type: [Schema.Types.Mixed] }, 
   // TODO:  We can make a separate Schema for this
   name: { type: String },
