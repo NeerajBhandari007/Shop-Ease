@@ -11,7 +11,28 @@ exports.createProduct = async (req, res) => {
   }
 };
 
+exports.searchProducts = async (req, res) => {
+  try {
+    console.log(req.body.item);
+    const regex = new RegExp(req.body.item, 'i');
+    const products = await Product.find({
+      $or: [
+        { title: { $regex: regex } },
+        { description: { $regex: regex }},
+        { brand: { $regex: regex } },
+        { category: { $regex: regex }},
+      ],
+    }).limit(6);
+    res.json(products);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};
+
+
 exports.fetchAllProducts = async (req, res) => {
+  // ye hai template
   // filter = {"category":["smartphone","laptops"]}
   // sort = {_sort:"price",_order="desc"}
   // pagination = {_page:1,_limit=10}
