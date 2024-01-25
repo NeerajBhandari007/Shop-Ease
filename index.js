@@ -101,7 +101,7 @@ server.use(
   })
 );
 server.use(express.json()); // frontend se json ara usko req.body me parse karne ke liye
-//  /products is a base path iske upar sare path lagenge jo productsRouter me hain
+//  products is a base path iske upar sare path lagenge jo productsRouter me hain
 server.use("/products", isAuth(), productsRouter.router);
 // we can also use JWT token for client-only auth
 server.use("/categories", isAuth(), categoriesRouter.router);
@@ -192,7 +192,7 @@ passport.deserializeUser(function (user, cb) {
 
 // Payments
 
-// This is your test secret API key.
+// This is test secret API key.
 const stripe = require("stripe")(process.env.STRIPE_SERVER_KEY);
 
 server.post("/create-payment-intent", async (req, res) => {
